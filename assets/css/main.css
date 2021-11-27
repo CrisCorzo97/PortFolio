@@ -2443,3 +2443,48 @@ input, select, textarea {
 					}
 
 	}
+
+	.tecnologiesCont {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.iconContainer {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin-left: 1%;
+		margin-right: 1%;
+		margin-bottom: 1.5%;
+		margin-top: 1.5%;
+		width: 10%;
+		background-color: #2eb6b6;
+		border-radius: 15px;
+		box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.397);
+		padding-left: 1.5%;
+		padding-right: 1.5%;
+	}
+	.iconContainer:hover {
+		background-color: #43bff0;
+		color: #fff !important;
+		-moz-transition: background-color .2s ease-in-out;
+		-webkit-transition: background-color .2s ease-in-out;
+		-ms-transition: background-color .2s ease-in-out;
+		transition: background-color .2s ease-in-out;
+	}
+
+
+	.imgIcon {
+		position: relative;
+		max-width: 100%;
+		height: auto;
+	}
+
+	.nameIcon {
+		color: white;
+		font-weight: bolder;
+		margin-bottom: 15%;
+	}
+	
