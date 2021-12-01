@@ -57,9 +57,9 @@
           <h2>Frameworks y tecnologías.</h2>
           <p>Tengo conocimiento y experiencia trabajando con las siguientes tecnologías:</p>
         </header>
-        <div class="tecnologiesCont">
+        <section class="tecnologiesCont">
 
-          <div class="row aln-center">
+          <div class="sectionTech">
             <div class="iconContainer">
               <img src="./images/Iconos png/Icono HTML.png" class="imgIcon"/>
               <p class="nameIcon">HTML5</p>
@@ -84,9 +84,6 @@
               <img src="./images/Iconos png/Icono Redux.png" class="imgIcon"/>
               <p class="nameIcon">Redux</p>
             </div>
-          </div>
-
-          <div class="row aln-center">
             <div class="iconContainer">
               <img src="./images/Iconos png/Icono Express.png" class="imgIcon"/>
               <p class="nameIcon">Express</p>
@@ -113,7 +110,7 @@
             </div>
           </div>
 
-        </div>
+        </section>
         <footer>
           <p>¿Quieres conocer algunos de mis proyectos?</p>
           <a href="#portfolio" class="button large scrolly"
@@ -127,72 +124,32 @@
     <article id="portfolio" class="wrapper style3">
       <div class="container">
         <header>
-          <h2>Here’s some stuff I made recently.</h2>
-          <p>
-            Proin odio consequat sapien vestibulum consequat lorem dolore
-            feugiat.
-          </p>
+          <h2>Trabajos recientes:</h2>
         </header>
         <div class="row">
           <div class="col-4 col-6-medium col-12-small">
             <article class="box style2">
-              <a href="#" class="image featured"
-                ><img src="images/pic01.jpg" alt=""
+              <a href="https://github.com/CrisCorzo97/EventIn" target="_blank" class="image featured"
+                ><img src="images/Event-In Portada.jpg" alt=""
               /></a>
-              <h3><a href="#">Magna feugiat</a></h3>
-              <p>Ornare nulla proin odio consequat.</p>
+              <h3><a href="https://github.com/CrisCorzo97/EventIn" target="_blank">Event-In</a></h3>
+              <p>App Mobile para Android desarrollada con React-Native, Expo y Firebase como base de datos en la nube. También se incorporaron servicios de autenticación, pasarela de pago (Mercado Pago), Google Maps, Expo Push Notifications, entre otros.</p>
             </article>
           </div>
           <div class="col-4 col-6-medium col-12-small">
             <article class="box style2">
-              <a href="#" class="image featured"
-                ><img src="images/pic02.jpg" alt=""
+              <a href="https://github.com/CrisCorzo97/Dogs-Proyect" target="_blank" class="image featured"
+                ><img src="images/DogsProyect.jpg" alt=""
               /></a>
-              <h3><a href="#">Veroeros primis</a></h3>
-              <p>Ornare nulla proin odio consequat.</p>
-            </article>
-          </div>
-          <div class="col-4 col-6-medium col-12-small">
-            <article class="box style2">
-              <a href="#" class="image featured"
-                ><img src="images/pic03.jpg" alt=""
-              /></a>
-              <h3><a href="#">Lorem ipsum</a></h3>
-              <p>Ornare nulla proin odio consequat.</p>
-            </article>
-          </div>
-          <div class="col-4 col-6-medium col-12-small">
-            <article class="box style2">
-              <a href="#" class="image featured"
-                ><img src="images/pic04.jpg" alt=""
-              /></a>
-              <h3><a href="#">Tempus dolore</a></h3>
-              <p>Ornare nulla proin odio consequat.</p>
-            </article>
-          </div>
-          <div class="col-4 col-6-medium col-12-small">
-            <article class="box style2">
-              <a href="#" class="image featured"
-                ><img src="images/pic05.jpg" alt=""
-              /></a>
-              <h3><a href="#">Feugiat aliquam</a></h3>
-              <p>Ornare nulla proin odio consequat.</p>
-            </article>
-          </div>
-          <div class="col-4 col-6-medium col-12-small">
-            <article class="box style2">
-              <a href="#" class="image featured"
-                ><img src="images/pic06.jpg" alt=""
-              /></a>
-              <h3><a href="#">Sed amet ornare</a></h3>
-              <p>Ornare nulla proin odio consequat.</p>
+              <h3><a href="https://github.com/CrisCorzo97/Dogs-Proyect" target="_blank">Dogs (SPA)</a></h3>
+              <p>Single Page Application desarrollada con el stack PERN. La misma es basada en <a href="https://www.thedogapi.com/" target="_blank">TheDogApi</a>, con API y cliente personalizados. </p>
             </article>
           </div>
         </div>
         <footer>
-          <p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
+          <p>¿Te interesan mi perfil?</p>
           <a href="#contact" class="button large scrolly"
-            >Get in touch with me</a
+            >Contáctame</a
           >
         </footer>
       </div>
@@ -202,22 +159,22 @@
     <article id="contact" class="wrapper style4">
       <div class="container medium">
         <header>
-          <h2>Have me make stuff for you.</h2>
-          <p>Ornare nulla proin odio consequat sapien vestibulum ipsum.</p>
+          <h2>Escríbeme para conocernos.</h2>
+          <p>Estoy atento a cualquier consulta/propuesta.</p>
         </header>
         <div class="row">
           <div class="col-12">
             <form method="post" action="#">
               <div class="row">
                 <div class="col-6 col-12-small">
-                  <input type="text" name="name" id="name" placeholder="Name" />
+                  <input type="text" name="name" id="name" placeholder="Nombre" />
                 </div>
                 <div class="col-6 col-12-small">
                   <input
                     type="text"
                     name="email"
                     id="email"
-                    placeholder="Email"
+                    placeholder="Correo"
                   />
                 </div>
                 <div class="col-12">
@@ -225,21 +182,21 @@
                     type="text"
                     name="subject"
                     id="subject"
-                    placeholder="Subject"
+                    placeholder="Asunto"
                   />
                 </div>
                 <div class="col-12">
                   <textarea
                     name="message"
                     id="message"
-                    placeholder="Message"
+                    placeholder="Mensaje"
                   ></textarea>
                 </div>
                 <div class="col-12">
                   <ul class="actions">
-                    <li><input type="submit" value="Send Message" /></li>
+                    <li><input type="submit" value="Enviar Mensaje" /></li>
                     <li>
-                      <input type="reset" value="Clear Form" class="alt" />
+                      <input type="reset" value="Limpiar Formulario" class="alt" />
                     </li>
                   </ul>
                 </div>
@@ -248,40 +205,15 @@
           </div>
           <div class="col-12">
             <hr />
-            <h3>Find me on ...</h3>
+            <h3>Encuéntrame en ...</h3>
             <ul class="social">
               <li>
-                <a href="#" class="icon brands fa-twitter"
-                  ><span class="label">Twitter</span></a
-                >
-              </li>
-              <li>
-                <a href="#" class="icon brands fa-facebook-f"
-                  ><span class="label">Facebook</span></a
-                >
-              </li>
-              <li>
-                <a href="#" class="icon brands fa-dribbble"
-                  ><span class="label">Dribbble</span></a
-                >
-              </li>
-              <li>
-                <a href="#" class="icon brands fa-linkedin-in"
+                <a href="https://linkedin.com/in/cristiancorzo" target="_blank" class="icon brands fa-linkedin-in"
                   ><span class="label">LinkedIn</span></a
                 >
               </li>
               <li>
-                <a href="#" class="icon brands fa-tumblr"
-                  ><span class="label">Tumblr</span></a
-                >
-              </li>
-              <li>
-                <a href="#" class="icon brands fa-google-plus"
-                  ><span class="label">Google+</span></a
-                >
-              </li>
-              <li>
-                <a href="#" class="icon brands fa-github"
+                <a href="https://github.com/CrisCorzo97" target="_blank" class="icon brands fa-github"
                   ><span class="label">Github</span></a
                 >
               </li>
@@ -297,15 +229,8 @@
 								<li><a href="#" class="icon brands fa-vimeo"><span>Vimeo</span></a></li>
 								-->
             </ul>
-            <hr />
           </div>
         </div>
-        <footer>
-          <ul id="copyright">
-            <li>&copy; Untitled. All rights reserved.</li>
-            <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-          </ul>
-        </footer>
       </div>
     </article>
 
