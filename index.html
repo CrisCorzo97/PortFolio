@@ -164,10 +164,10 @@
         </header>
         <div class="row">
           <div class="col-12">
-            <form method="post" action="#">
+            <form id="form" method="" action="">
               <div class="row">
                 <div class="col-6 col-12-small">
-                  <input type="text" name="name" id="name" placeholder="Nombre" />
+                  <input type="text" name="name" id="name" placeholder="Nombre" required/>
                 </div>
                 <div class="col-6 col-12-small">
                   <input
@@ -175,6 +175,7 @@
                     name="email"
                     id="email"
                     placeholder="Correo"
+                    required
                   />
                 </div>
                 <div class="col-12">
@@ -183,6 +184,7 @@
                     name="subject"
                     id="subject"
                     placeholder="Asunto"
+                    required
                   />
                 </div>
                 <div class="col-12">
@@ -190,18 +192,20 @@
                     name="message"
                     id="message"
                     placeholder="Mensaje"
+                    required
                   ></textarea>
                 </div>
                 <div class="col-12">
                   <ul class="actions">
                     <li><input type="submit" value="Enviar Mensaje" /></li>
                     <li>
-                      <input type="reset" value="Limpiar Formulario" class="alt" />
+                      <input type="reset" value="Limpiar Formulario" class="alt" id="reset"/>
                     </li>
                   </ul>
                 </div>
               </div>
             </form>
+            <a href="mailto:crcorzo04@hotmail.com" id="mail">mail</a>
           </div>
           <div class="col-12">
             <hr />
@@ -241,5 +245,20 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+      const $form = document.querySelector("#form")
+      const $buttonMail = document.querySelector("#mail")
+      const $reset = document.querySelector("#reset")
+
+      $form.addEventListener("submit", handleSubmit)
+
+      function handleSubmit(event) {
+        event.preventDefault();
+        const form = new FormData(this);
+        $buttonMail.setAttribute('href', `mailto:crcorzo04@hotmail.com?subject=${form.get('subject')}&body=${form.get('message')}`)
+        $buttonMail.click()
+        $reset.click()
+      }
+    </script>
   </body>
 </html>
